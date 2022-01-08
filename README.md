@@ -13,3 +13,4 @@
 <img src="./assets/planets-component-hierarchy.png" alt="componenet hierarchy" />
 
 ## API
+<p>I will be using the API and airtable to pull in inforamtion on planets that I entered in.</p>
