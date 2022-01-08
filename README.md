@@ -13,4 +13,22 @@
 <img src="./assets/planets-component-hierarchy.png" alt="componenet hierarchy" />
 
 ## API
-<p>I will be using the API and airtable to pull in inforamtion on planets that I entered in.</p>
+<p>I will be using the API and airtable to pull in information on planets that I have entered in.</p>
+
+![image](https://user-images.githubusercontent.com/80793283/148662064-cd9caf5e-e41d-4211-b5d1-41e83d117656.png)
+
+## MVP
+- Render a page showing all of the planets and a picture (coming from the airtable API)
+- Render a page where a user will be able to enter a new record onto the page (other dwarf planets, comets, asteroids, the sun, etc)
+- Render a page specifially for each planet displaying information about the planet (coming from the airtable API)
+
+
+## Post MVP
+- Use a second API to get more information on each planet and the solarsystem, such as planet moons and information about them, comets, asteroids
+- Create a new table on airtable and have users vote on their favorite planet and display back that infromation in a chart/table/graph
+
+## Project Schedule
+
+## Timeframes
+
+## SWOT Analysis
