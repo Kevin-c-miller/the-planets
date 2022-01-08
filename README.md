@@ -14,7 +14,8 @@
 
 ## API and Data Sample
 
-![image](https://user-images.githubusercontent.com/80793283/148662064-cd9caf5e-e41d-4211-b5d1-41e83d117656.png)
+![image](https://user-images.githubusercontent.com/80793283/148663154-2fd0d387-693c-40bf-b677-7b325444dda1.png)
+
 
 ### MVP
 - Render a page showing all of the planets and a picture (coming from the airtable API)
@@ -24,7 +25,7 @@
 
 ### Post MVP
 - Use a second API to get more information on each planet and the solarsystem, such as planet moons and information about them, comets, asteroids
-- Create a new table on airtable and have users vote on their favorite planet and display back that infromation in a chart/table/graph
+- Create a new table on airtable and have users vote on their favorite planet and display back that information in a chart/table/graph
 
 ## Project Schedule
 
