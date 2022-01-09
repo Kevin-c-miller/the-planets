@@ -7,10 +7,12 @@
 <p>Vistors will be able to find information on the planets in our solar system. They also will be able to enter in new objects and have them render to the page. Space and the planets are a fascinating aspect to think about, but a lot of the time the information is very hard to understand. The goal of this app is to provide information in layman's terms to accommodate everyone. </p>
 
 ## Wireframes
-![image](https://user-images.githubusercontent.com/80793283/148662528-38ea55b7-c05c-4fca-9547-401942dcd4a6.png)
+![image](https://user-images.githubusercontent.com/80793283/148693507-68613e94-5ee5-48d7-b828-6a8cdca9ec97.png)
+<br/>
 
 ## Component Hierarchy
-![image](https://user-images.githubusercontent.com/80793283/148662565-d7299a34-e56e-46ef-8efc-d5ba489c9e8c.png)
+![image](https://user-images.githubusercontent.com/80793283/148693833-7c19af04-41b7-4743-8d9b-9df64d1cb2ef.png)
+
 
 ## API and Data Sample
 
@@ -19,12 +21,13 @@
 
 ### MVP
 - Render a page showing all of the planets and a picture (coming from the airtable API)
-- Render a page where a user will be able to enter a new record onto the page (other dwarf planets, comets, asteroids, the sun, etc)
 - Render a page specifially for each planet displaying information about the planet (coming from the airtable API)
+- Render a page where a user will be able to enter a new record onto the page (other dwarf planets, comets, asteroids, the sun, etc)
+- Render a page showing all of the user submissions
 
 
 ### Post MVP
-- Use a second API to get more information on each planet and the solarsystem, such as planet moons and information about them, comets, asteroids
+- Use a second API to get more information on other object in space (planets, comets, asteroids, the sun, pictures of other galaxies, etc)
 - Create a new table on airtable and have users vote on their favorite planet and display back that information in a chart/table/graph
 
 ## Project Schedule
@@ -45,9 +48,23 @@ This schedule will be used to keep track of your progress throughout the week an
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Initial set up of react app and framework | H | 3hrs| -- | -- |
+| Application structure set up | H | 3hrs| -- | -- |
+| Setting up API | H | 2hrs| -- | -- |
+| CSS library | H | 4hrs| -- | -- |
+| Navbar component & navbar styling | H | 2hrs| -- | -- |
+| All Planets component & styling | H | 3hrs| -- | -- |
+| All Planets component Get request | H | 1.5hrs| -- | -- |
+| Planet Page & styling | H | 3hrs| -- | -- |
+| Add new page & form | H | 3hrs| -- | -- 
+| Add new component post request | H | 1.5hrs| -- | -- |
+| User entry component and styling | H | 3hrs| -- | -- |
+| Footer | H | 2hrs| -- | -- |
+| Responsive design and media queries | H | 4hrs| -- | -- |
+| Debugging | H | 3hrs| -- | -- |
+| Misc touch ups & testing | H | 3hrs| -- | -- |
+| Deployment | H | 1hrs| -- | -- |
+| Total | H | 42hrs| -- | -- |
 
 ## SWOT Analysis
 
@@ -57,11 +74,12 @@ This schedule will be used to keep track of your progress throughout the week an
 - Using code alongs as a reference guide
 
 ### Weaknesses:
-- Component styling
-- 
+- responsive styling
+- styling in general
 
 ### Opportunities:
 - Using a styling library
-- Researching different npm libraries to mkae the app more visually appealing
+- Researching different npm libraries 
 
 ### Threats:
+- Getting stuck on one task for too long and end up getting behind on how far along I'd like to be
