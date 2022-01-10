@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Name
+<h3>The Planets</h3>
 
-## Available Scripts
+## Project Description
+<p>Vistors will be able to find information on the planets in our solar system. They also will be able to enter in new objects and have them render to the page. Space and the planets are a fascinating aspect to think about, but a lot of the time the information is very hard to understand. The goal of this app is to provide information in layman's terms to accommodate everyone. </p>
 
-In the project directory, you can run:
+## Wireframes
+![image](https://user-images.githubusercontent.com/80793283/148693507-68613e94-5ee5-48d7-b828-6a8cdca9ec97.png)
+<br/>
 
-### `npm start`
+## Component Hierarchy
+![image](https://user-images.githubusercontent.com/80793283/148693833-7c19af04-41b7-4743-8d9b-9df64d1cb2ef.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## API and Data Sample
 
-### `npm test`
+![image](https://user-images.githubusercontent.com/80793283/148663154-2fd0d387-693c-40bf-b677-7b325444dda1.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### MVP
+- Render a page showing all of the planets and a picture (coming from the airtable API)
+- Render a page specifially for each planet displaying information about the planet (coming from the airtable API)
+- Render a page where a user will be able to enter a new record onto the page (other dwarf planets, comets, asteroids, the sun, etc)
+- Render a page showing all of the user submissions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Post MVP
+- Use a second API to get more information on other object in space (planets, comets, asteroids, the sun, pictures of other galaxies, etc)
+- Create a new table on airtable and have users vote on their favorite planet and display back that information in a chart/table/graph
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Schedule
 
-### `npm run eject`
+This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+|  Day | Deliverable | Status
+|---|---| ---|
+|Jan 7-9| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Jan 10| Project Approval, Create React App, & Basic Framework | Incomplete
+|Jan 11| Core Application Structure Build out, API for rendering all planets, styling | Incomplete
+|Jan 12| Build out components for creating new records | Incomplete
+|Jan 13-14| Finish MVP and any last stlying  | Incomplete
+|Jan 15-17| Post MVP | Incomplete
+|Jan 18| Presentations | Incomplete
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Timeframes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Initial set up of react app and framework | H | 3hrs| -- | -- |
+| Application structure set up | H | 3hrs| -- | -- |
+| Setting up API | H | 2hrs| -- | -- |
+| CSS library | H | 4hrs| -- | -- |
+| Navbar component & navbar styling | H | 2hrs| -- | -- |
+| All Planets component & styling | H | 3hrs| -- | -- |
+| All Planets component Get request | H | 1.5hrs| -- | -- |
+| Planet Page & styling | H | 3hrs| -- | -- |
+| Add new page & form | H | 3hrs| -- | -- 
+| Add new component post request | H | 1.5hrs| -- | -- |
+| User entry component and styling | H | 3hrs| -- | -- |
+| Footer | H | 2hrs| -- | -- |
+| Responsive design and media queries | H | 4hrs| -- | -- |
+| Debugging | H | 3hrs| -- | -- |
+| Misc touch ups & testing | H | 3hrs| -- | -- |
+| Deployment | H | 1hrs| -- | -- |
+| Total | H | 42hrs| -- | -- |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## SWOT Analysis
 
-## Learn More
+### Strengths:
+- Setting up component structure
+- Staying organized
+- Using code alongs as a reference guide
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Weaknesses:
+- responsive styling
+- styling in general
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Opportunities:
+- Using a styling library
+- Researching different npm libraries 
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Threats:
+- Getting stuck on one task for too long and end up getting behind on how far along I'd like to be
