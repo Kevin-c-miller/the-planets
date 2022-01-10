@@ -35,32 +35,55 @@ export default function PlanetDetails() {
         </div>
         <div className="planet-info">
           <h2>{planet.fields?.Name}</h2>
-          {planet.fields?.orderFromSun}
-          <br />
-          {planet.fields?.planetStatus}
-          <br />
-          {planet.fields?.planetType}
-          <br />
-          {planet.fields?.distanceFromSun}
-          <br />
-          {planet.fields?.lengthOfDay}
-          <br />
-          {planet.fields?.lengthOfYear}
-          <br />
-          {planet.fields?.size}
-          <br />
-          {planet.fields?.numberOfMoons}
-          <br />
-          {planet.fields?.temperature}
-          <br />
-          {planet.fields?.atmosphere}
-          <br />
-          {planet.fields?.rings}
-          <br />
-          {planet.fields?.discoveryDate}
-          <br />
-          {planet.fields?.randomFacts}
-          <br />
+
+          <p>
+            <b>Order From Sun:</b> {planet.fields?.orderFromSun}
+          </p>
+
+          <p>
+            <b>Planet Type:</b> {planet.fields?.planetType}
+          </p>
+
+          <p>
+            <b>Distance from the sun:</b> {planet.fields?.distanceFromSun}{' '}
+          </p>
+
+          <p>
+            <b>Length of a day:</b> {planet.fields?.lengthOfDay}
+          </p>
+
+          <p>
+            <b>Length of a year</b>
+            {planet.fields?.lengthOfYear}
+          </p>
+
+          <p>
+            <b>Size:</b> {planet.fields?.size}
+          </p>
+
+          <p>
+            <b>Number of Moons:</b> {planet.fields?.numberOfMoons}
+          </p>
+
+          <p>
+            <b>Average Temperature:</b> {planet.fields?.temperature}
+          </p>
+
+          <p>
+            <b>Atmosphere:</b> {planet.fields?.atmosphere}
+          </p>
+
+          <p>
+            <b>Number of Rings:</b> {planet.fields?.rings}
+          </p>
+
+          <p>
+            <b>Discovered:</b> {planet.fields?.discoveryDate}
+          </p>
+
+          <p>
+            <b>Random Facts:</b> {planet.fields?.randomFacts}
+          </p>
         </div>
       </div>
     </div>
