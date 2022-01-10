@@ -17,6 +17,7 @@ export default function AllPlanets() {
 
   return (
     <>
+      <h2>Planets of Our Solar System</h2>
       <div className="all-planets">
         <ul>
           {planets.map((planet) => {
