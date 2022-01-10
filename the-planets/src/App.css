@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+.all-planets {
+  margin-top: 100px;
+}
+
+.all-planets ul {
+  list-style-type: none;
+}

@@ -14,11 +14,10 @@ export default function AllPlanets() {
     };
     fetchPlanets();
   }, []);
-  console.log(planets);
 
   return (
     <>
-      <div>
+      <div className="all-planets">
         <ul>
           {planets.map((planet) => {
             return (

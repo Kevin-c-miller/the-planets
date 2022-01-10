@@ -24,7 +24,6 @@ export default function AddNewEntry() {
       [id]: value,
     }));
   };
-  console.log(input);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

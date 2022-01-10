@@ -7,7 +7,6 @@ export default function UserEntries() {
   useEffect(() => {
     const fetchUserEntries = async () => {
       const res = await api.get();
-      console.log(res.data.records);
       setUserEntries(res.data.records);
     };
     fetchUserEntries();
@@ -28,9 +27,15 @@ export default function UserEntries() {
                     src={userEntry.fields?.image}
                     alt={userEntry.fields?.name}
                   />
-                  <p>Type of Astronomical Object: {userEntry.fields?.type}</p>
-                  <p>Fun Fact: {userEntry.fields?.fact}</p>
-                  <p>Submitted by: {userEntry.fields?.userEntryName}</p>
+                  <p>
+                    <b>Type of Astronomical Object:</b> {userEntry.fields?.type}
+                  </p>
+                  <p>
+                    <b>Fun Fact:</b> {userEntry.fields?.fact}
+                  </p>
+                  <p>
+                    <b>Submitted by:</b> {userEntry.fields?.userEntryName}
+                  </p>
                 </div>
               </li>
             );
