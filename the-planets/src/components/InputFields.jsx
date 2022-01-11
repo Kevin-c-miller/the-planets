@@ -8,7 +8,7 @@ export default function InputFields(props) {
     <div className="input-form">
       <Container>
         <Row>
-          <Form onSubmit={props.handleSubmit}>
+          <Form>
             <Form.Label>Object Name</Form.Label>
             <Form.Control
               id="name"
@@ -54,7 +54,12 @@ export default function InputFields(props) {
             />
             <br />
 
-            <Button variant="primary" size="lg">
+            <Button
+              variant="primary"
+              size="lg"
+              type="submit"
+              onClick={props.handleSubmit}
+            >
               Submit
             </Button>
           </Form>
