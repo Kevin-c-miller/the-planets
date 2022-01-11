@@ -19,7 +19,7 @@ export default function AllPlanets() {
 
   const renderCard = (planet, index) => {
     return (
-      <div className="card text-center" key={index}>
+      <div className="card text-center shadow" key={index}>
         <div className="overflow">
           <img
             style={{ height: '315px', width: '315px' }}
@@ -40,11 +40,8 @@ export default function AllPlanets() {
 
   return (
     <>
-      {/* <h2>Planets of Our Solar System</h2> */}
-      <div className="grid">
-        {planets.map(renderCard)}
-        {/* <PlanetsCard planets={planets} /> */}
-      </div>
+      <h2>Planets of Our Solar System</h2>
+      <div className="grid">{planets.map(renderCard)}</div>
     </>
   );
 }

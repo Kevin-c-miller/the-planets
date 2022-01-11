@@ -1,9 +1,9 @@
-import React from 'react';
+import './Navbar.css';
 import * as ReactBootStrap from 'react-bootstrap';
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="nav-bar">
       <ReactBootStrap.Navbar
         collapseOnSelect
         expand="lg"
