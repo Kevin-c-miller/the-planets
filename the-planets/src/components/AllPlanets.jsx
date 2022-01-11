@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../services/apiConfig/planet.js';
+import PlanetsCard from './PlanetsCard.jsx';
+import './Box.css';
 
 export default function AllPlanets() {
   const [planets, setPlanets] = useState([]);
@@ -15,28 +17,33 @@ export default function AllPlanets() {
     fetchPlanets();
   }, []);
 
+  const renderCard = (planet, index) => {
+    return (
+      <div className="card text-center" key={index}>
+        <div className="overflow">
+          <img
+            style={{ height: '315px', width: '315px' }}
+            src={planet.fields?.image}
+            alt={planet.fields?.Name}
+            className="card-img-top"
+          />
+        </div>
+        <div className="card-body text-dark">
+          <h4 className="card-title">{planet.fields?.Name}</h4>
+          <a href={`/planets/${planet.id}`} className="btn btn-outline-success">
+            Learn More
+          </a>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
-      <h2>Planets of Our Solar System</h2>
-      <div className="all-planets">
-        <ul>
-          {planets.map((planet) => {
-            return (
-              <li key={planet.id}>
-                <div>
-                  <h2>{planet.fields.Name}</h2>
-                  <Link to={`/planets/${planet.id}`}>
-                    <img
-                      style={{ width: '400px', height: '350px' }}
-                      src={planet.fields.image}
-                      alt={planet.fields.Name}
-                    />
-                  </Link>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
+      {/* <h2>Planets of Our Solar System</h2> */}
+      <div className="grid">
+        {planets.map(renderCard)}
+        {/* <PlanetsCard planets={planets} /> */}
       </div>
     </>
   );

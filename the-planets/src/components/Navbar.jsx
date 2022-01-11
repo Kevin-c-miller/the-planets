@@ -6,7 +6,7 @@ export default function Navbar() {
     <div>
       <ReactBootStrap.Navbar
         collapseOnSelect
-        expand="md"
+        expand="lg"
         bg="dark"
         variant="dark"
         fixed="top"

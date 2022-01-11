@@ -6,7 +6,9 @@ import PlanetDetails from './components/PlanetDetails';
 import AddNewEntry from './components/AddNewEntry';
 import UserEntries from './components/UserEntries';
 import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import PlanetsCard from './components/PlanetsCard';
 
 function App() {
   return (
@@ -16,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route
           path="/planets"
-          element={<AllPlanets />}
+          element={<PlanetsCard />}
           className="all-planets"
         />
         <Route path="/planets/:id" element={<PlanetDetails />} />
