@@ -1,3 +1,16 @@
 .navbar {
   height: 80px !important;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 32px !important;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid white !important;
 }

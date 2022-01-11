@@ -1,13 +1,9 @@
-body {
-  /* padding-top: 100px; */
-  /* margin-top: 100px; */
-}
-
 .all-planets ul {
   list-style-type: none;
 }
 
 .page-container {
+  background: url('./assets/spacebg.jpg') no-repeat center center/cover;
   text-align: center;
   padding-top: 12vh;
   display: flex;
@@ -18,31 +14,3 @@ body {
 .content-wrap {
   flex: 1;
 }
-
-/* <footer className="bg-dark text-center text-white">
-        <div className="container p-4 pb-0">
-          <section className="mb-4">
-            <a
-              className="btn btn-outline-light btn-floating m-1"
-              href="https://www.linkedin.com/in/kevin-c-miller/"
-              role="button"
-            >
-              <img src="" alt="linkedin logo" />
-            </a>
-
-            <a
-              className="btn btn-outline-light btn-floating m-1"
-              href="https://github.com/Kevin-c-miller"
-              role="button"
-            >
-              <img src="" alt="github logo" />
-            </a>
-          </section>
-        </div>
-        <div
-          className="text-center p-3"
-          style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
-        >
-          © 2022 Copyright: Kevin Miller
-        </div>
-      </footer> */

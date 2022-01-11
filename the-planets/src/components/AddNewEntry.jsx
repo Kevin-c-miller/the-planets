@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Form from './Form';
+import InputFields from './InputFields';
 import api from '../services/apiConfig/userEntry.js';
 import { useNavigate } from 'react-router-dom';
 
@@ -35,9 +35,9 @@ export default function AddNewEntry() {
   };
 
   return (
-    <div>
+    <div className="AddNew">
       <h2>Add an entry!</h2>
-      <Form
+      <InputFields
         input={input}
         handleTextInput={handleTextInput}
         handleSubmit={handleSubmit}

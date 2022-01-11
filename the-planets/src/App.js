@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import PlanetsCard from './components/PlanetsCard';
+// import './assets';
 
 function App() {
   return (

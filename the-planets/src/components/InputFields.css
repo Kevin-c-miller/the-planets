@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.AddNew h2 {
+  font-family: 'Space Mono', 'Times New Roman', Times, serif;
+  margin: 10px auto 30px;
+  color: #fff;
+}
+
+.input-form .container .row {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #fff;
+  background: rgb(231, 231, 231);
+  opacity: 0.8;
+  backdrop-filter: blur(10px);
+}
+
+.form-label {
+  font-weight: bold;
+  color: #000;
+}
+
+.form-control {
+  border: 2px solid black !important;
+  border-radius: 8px !important;
+}
