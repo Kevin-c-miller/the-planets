@@ -5,10 +5,9 @@ import PlanetDetails from './components/PlanetDetails';
 import AddNewEntry from './components/AddNewEntry';
 import UserEntries from './components/UserEntries';
 import Footer from './components/Footer';
+import PlanetsCard from './components/PlanetsCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import PlanetsCard from './components/PlanetsCard';
-// import './assets';
 
 function App() {
   return (
