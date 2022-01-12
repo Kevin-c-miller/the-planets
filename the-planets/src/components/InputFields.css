@@ -4,16 +4,19 @@
   font-family: 'Space Mono', 'Times New Roman', Times, serif;
   margin: 10px auto 30px;
   color: #fff;
+  margin-top: 8vh;
 }
 
-.input-form .container .row {
-  width: 50%;
-  margin: 0 auto;
-  padding: 10px;
-  border: 1px solid #fff;
-  background: rgb(231, 231, 231);
-  opacity: 0.8;
-  backdrop-filter: blur(10px);
+.input-form {
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  padding: 15px 25px;
+  color: #333;
+  border: 3px solid rgb(73, 198, 255);
+  border-radius: 10px;
+  background: #e5e5e5;
 }
 
 .form-label {

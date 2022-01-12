@@ -1,5 +1,9 @@
 .Home h1 {
   font-size: 40px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   color: white;
+}
+
+.Home img {
+  max-height: 72vh;
 }

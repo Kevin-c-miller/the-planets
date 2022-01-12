@@ -29,7 +29,6 @@ export default function AddNewEntry() {
     e.preventDefault();
     const fields = input;
     await api.post('', { fields });
-    console.log('submit');
     setInput(default_input);
     navigate('/user-entries');
   };

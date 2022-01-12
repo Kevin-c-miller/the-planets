@@ -3,9 +3,10 @@
 }
 
 .page-container {
-  background: url('./assets/spacebg.jpg') no-repeat center center/cover;
+  background: url('./assets/background/spacebg.jpg') no-repeat center
+    center/cover;
   text-align: center;
-  padding-top: 15vh;
+  padding-top: 14vh;
   display: flex;
   flex-direction: column;
   min-height: 100vh;

@@ -1,6 +1,5 @@
 import './Footer.css';
-import github from '../assets/github.png';
-import linkedin from '../assets/linkedin.png';
+import { Github, Linkedin } from '../assets/index.js';
 
 export default function Footer() {
   return (
@@ -15,7 +14,7 @@ export default function Footer() {
             >
               <img
                 style={{ height: '50px', width: '50px' }}
-                src={github}
+                src={Github}
                 alt="Github logo"
               />
             </a>
@@ -27,7 +26,7 @@ export default function Footer() {
             >
               <img
                 style={{ height: '50px', width: '50px' }}
-                src={linkedin}
+                src={Linkedin}
                 alt="Linkedin logo"
               />
             </a>

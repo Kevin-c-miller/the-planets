@@ -1,25 +1,25 @@
 import React from 'react';
+import PlanetDetailsModal from './PlanetDetailsModal';
 
 export default function PlanetDetailsCard(props) {
   const { planet } = props;
   return (
-    <div>
-      <div className="p-5">
-        <div className="row text-center">
-          <div className="text-light">
-            <div className="mb-3">
-              <h2>{planet.fields?.Name}</h2>
-            </div>
-            <div className="planet-img">
-              <img
-                style={{ width: '400px', height: '350px' }}
-                src={planet.fields.image}
-                alt={planet.fields.Name}
-              />
-            </div>
+    <div className="planet-detail-container">
+      <div className="row text-center">
+        <div className="text-light">
+          <div className="mb-3">
+            <h2 id="planet-header">{planet.fields?.Name}</h2>
+          </div>
+          <div className="img-fluid planet-img">
+            <img
+              style={{ width: '400px', height: '350px' }}
+              src={planet.fields.image}
+              alt={planet.fields.Name}
+            />
           </div>
         </div>
-
+      </div>
+      <div className="planet-info-container">
         <div className="row text-center">
           <div className="col-md">
             <div className="card card-planet bg-dark text-light">
@@ -46,18 +46,10 @@ export default function PlanetDetailsCard(props) {
                   <br />
                   {planet.fields?.lengthOfYear}
                 </p>
-
                 <p>
                   <b>Number of Moons:</b>
                   <br /> {planet.fields?.numberOfMoons}
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md">
-            <div className="card card-planet bg-dark text-light">
-              <div className="card-text">
                 <p>
                   <b>Size:</b>
                   <br /> {planet.fields?.size}
@@ -72,21 +64,21 @@ export default function PlanetDetailsCard(props) {
                   <br />
                   {planet.fields?.temperature}
                 </p>
-
                 <p>
                   <b>Atmosphere:</b>
                   <br />
                   {planet.fields?.atmosphere}
                 </p>
-
                 <p>
                   <b>Discovered:</b> <br />
                   {planet.fields?.discoveryDate}
                 </p>
-
                 <p>
                   <b>Random Facts:</b>
-                  <br /> {planet.fields?.randomFacts}
+                  <br />
+                  <PlanetDetailsModal
+                    planetFacts={planet.fields?.randomFacts}
+                  />
                 </p>
               </div>
             </div>

@@ -1,19 +1,24 @@
-.planet-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
+.planet-detail-container {
+  padding: 0 5px 5px 5px;
+}
+
+.planet-img {
+  margin: auto;
 }
 
 .planet-img img {
-  width: 50%;
-  height: 50%;
   border-radius: 50%;
 }
 
-.planet-info {
-  align-items: flex-start;
+.planet-img img:hover {
+  border: 3px solid white;
+  transition: 0.2s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.planet-info-container {
+  margin: auto;
+  width: 60%;
 }
 
 .card-planet {
@@ -26,4 +31,8 @@
 
 .card-text p {
   font-size: 16px;
+}
+
+#planet-header {
+  font-size: 36px;
 }
