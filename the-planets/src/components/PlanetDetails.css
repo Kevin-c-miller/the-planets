@@ -1,0 +1,21 @@
+.planet-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.planet-picture {
+  width: 410px !important;
+  height: 360px !important;
+  max-width: 600px;
+}
+
+.planet-info {
+  align-items: flex-start;
+}
+
+#planet-detail-header {
+  align-items: center !important;
+}

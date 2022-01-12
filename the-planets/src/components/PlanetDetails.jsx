@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {} from 'react-router-dom';
 import api from '../services/apiConfig/planet.js';
+import './PlanetDetails.css';
 
 export default function PlanetDetails() {
   const [planet, setPlanet] = useState({});
@@ -24,16 +25,16 @@ export default function PlanetDetails() {
   }
 
   return (
-    <div>
-      <div className="planet-container">
-        <div className="planet-picture">
+    <div className="grid">
+      <div className="planet-container shadow">
+        <div className="planet-picture card">
           <img
             style={{ width: '400px', height: '350px' }}
             src={planet.fields.image}
             alt={planet.fields.Name}
           />
         </div>
-        <div className="planet-info">
+        <div className="planet-info card">
           <h2>{planet.fields?.Name}</h2>
 
           <p>

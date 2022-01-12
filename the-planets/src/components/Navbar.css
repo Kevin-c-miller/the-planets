@@ -6,9 +6,15 @@
 .navbar-brand {
   font-size: 32px !important;
 }
+.navbar-nav {
+  background: #212529 !important;
+  align-items: center !important;
+}
 
 .nav-link {
+  display: flex !important;
   color: #fff !important;
+  /* max-width: 200px; */
 }
 
 .nav-link:hover {
