@@ -7,3 +7,4 @@ export const Mars = require('./images/marsrover.jpeg');
 export const Saturn = require('./images/saturnrings.jpeg');
 export const Sun = require('./images/sun.jpeg');
 export const Supernova = require('./images/supernovacrabnebula.jpeg');
+export const Uranus = require('./images/uranus.jpeg');

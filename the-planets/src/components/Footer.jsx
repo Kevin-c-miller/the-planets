@@ -36,6 +36,8 @@ export default function Footer() {
         <div className="row">
           <p className="col-sm">
             &copy;{new Date().getFullYear()} Kevin Miller
+            <br />
+            Images courtesy of NASA
           </p>
         </div>
       </div>
