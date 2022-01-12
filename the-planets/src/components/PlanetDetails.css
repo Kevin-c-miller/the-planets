@@ -6,16 +6,24 @@
   width: 30%;
 }
 
-.planet-picture {
-  width: 410px !important;
-  height: 360px !important;
-  max-width: 600px;
+.planet-img img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
 }
 
 .planet-info {
   align-items: flex-start;
 }
 
-#planet-detail-header {
-  align-items: center !important;
+.card-planet {
+  width: auto !important;
+}
+
+.row {
+  align-items: center;
+}
+
+.card-text p {
+  font-size: 16px;
 }
