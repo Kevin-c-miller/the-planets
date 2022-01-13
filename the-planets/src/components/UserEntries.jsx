@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import api from '../services/apiConfig/userEntry';
+import Accordion from 'react-bootstrap/Accordion';
 
 export default function UserEntries() {
   const [userEntries, setUserEntries] = useState([]);
@@ -25,15 +26,25 @@ export default function UserEntries() {
           <div className="card-body text-dark">
             <h4 className="card-title">{userEntry.fields?.name}</h4>
             <div className="user-entry-fields">
-              <p>
-                <b>Type of Astronomical Object:</b> {userEntry.fields?.type}
-              </p>
-              <p>
-                <b>Fun Fact:</b> {userEntry.fields?.fact}
-              </p>
-              <p>
-                <b>Submitted by:</b> {userEntry.fields?.userEntryName}
-              </p>
+              <Accordion>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    Type of Astronomical Object
+                  </Accordion.Header>
+                  <Accordion.Body>{userEntry.fields?.type}</Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>Fun Fact</Accordion.Header>
+                  <Accordion.Body>{userEntry.fields?.fact}</Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+
+              <br />
+              <div>
+                <p>
+                  <b>Submitted by:</b> {userEntry.fields?.userEntryName}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -43,10 +54,8 @@ export default function UserEntries() {
 
   return (
     <>
-      <div>
-        <h2 style={{ color: 'white' }}>User Entries</h2>
-        <div className="grid">{userEntries.map(renderUserEntry)}</div>
-      </div>
+      <h2 style={{ color: 'white' }}>User Entries</h2>
+      <div className="grid">{userEntries.map(renderUserEntry)}</div>
     </>
   );
 }

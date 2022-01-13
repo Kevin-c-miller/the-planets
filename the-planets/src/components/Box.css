@@ -1,6 +1,6 @@
 .card {
   margin: 20px;
-  width: 20rem;
+  width: 320px;
   -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.8);
   border: 3px solid white !important;
@@ -9,17 +9,30 @@
   overflow: auto;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
+.card-img-top {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.2);
+}
+
 .card-body {
-  padding: 1.4rem 0 !important;
+  padding: 22.5px 0 !important;
 }
 
 .card-text {
-  font-size: 0.9rem;
-  padding: 0.4rem 1.9rem;
+  font-size: 16px;
+  padding: 6.5px 30px;
 }
 
 .container-fluid .row {
-  padding-top: 4rem;
+  padding-top: 64px;
 }
 
 .grid {
@@ -34,22 +47,21 @@
   width: 100% !important;
 }
 
-.overflow {
-  overflow: hidden;
-}
-
-.card-img-top {
-  transform: scale(1);
-  transition: transform 0.5s ease;
-}
-
-.card-img-top:hover {
-  transform: scale(1.25);
-}
-
 .user-entry-fields {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.accordion-item {
+  width: 100%;
 }

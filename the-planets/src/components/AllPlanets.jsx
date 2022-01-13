@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import api from '../services/apiConfig/planet.js';
-import PlanetsCard from './PlanetsCard.jsx';
 import './Box.css';
 
 export default function AllPlanets() {
