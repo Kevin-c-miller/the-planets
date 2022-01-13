@@ -7,3 +7,9 @@
 .Home img {
   max-height: 72vh;
 }
+
+.carousel-item img {
+  padding: 10px;
+  max-width: 2400px;
+  margin: auto;
+}
