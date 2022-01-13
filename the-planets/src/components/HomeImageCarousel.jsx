@@ -9,6 +9,7 @@ import {
   Uranus,
 } from '../assets/index.js';
 
+//image carousol being rendered on hompage of app
 export default function HomeImageCarousel() {
   return (
     <div>

@@ -16,6 +16,7 @@ export default function AddNewEntry() {
 
   const navigate = useNavigate();
 
+  //for input values on form
   const handleTextInput = (e) => {
     const { id, value } = e.target;
     console.log(id, value);
@@ -25,6 +26,7 @@ export default function AddNewEntry() {
     }));
   };
 
+  //for submit function on form
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = input;

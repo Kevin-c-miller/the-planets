@@ -4,6 +4,7 @@ import { Modal, Button } from 'react-bootstrap';
 export default function PlanetDetailsModal(props) {
   const [show, setShow] = useState(false);
 
+  // showing or closing modal function
   const handleModal = () => {
     setShow((prevShow) => !prevShow);
   };
