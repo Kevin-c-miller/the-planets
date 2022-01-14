@@ -11,7 +11,9 @@ export default function UserEntries() {
 
   useEffect(() => {
     const fetchUserEntries = async () => {
-      const res = await api.get();
+      const res = await api.get(
+        '?sort%5B0%5D%5Bfield%5D=name&sort%5B0%5D%5Bdirection%5D=desc'
+      );
       setUserEntries(res.data.records);
     };
     fetchUserEntries();
