@@ -27,8 +27,10 @@
 
 
 ### Post MVP
+
+- Add delete option on user entries
+- Add favorite button and save to local storage
 - Use a second API to get more information on other object in space (planets, comets, asteroids, the sun, pictures of other galaxies, etc)
-- Create a new table on airtable and have users vote on their favorite planet and display back that information in a chart/table/graph
 
 ## Project Schedule
 
@@ -36,11 +38,11 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 7-9| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Jan 10| Project Approval, Create React App, & Basic Framework | Incomplete
-|Jan 11| Core Application Structure Build out, API for rendering all planets, styling | Incomplete
-|Jan 12| Build out components for creating new records | Incomplete
-|Jan 13-14| Finish MVP and any last stlying  | Incomplete
+|Jan 7-9| Prompt / Wireframes / Priority Matrix / Timeframes | complete
+|Jan 10| Project Approval, Create React App, & Basic Framework | complete
+|Jan 11| Core Application Structure Build out, API for rendering all planets, styling | complete
+|Jan 12| Build out components for creating new records | complete
+|Jan 13-14| Finish MVP and any last stlying  | complete
 |Jan 15-17| Post MVP | Incomplete
 |Jan 18| Presentations | Incomplete
 
