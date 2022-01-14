@@ -6,6 +6,8 @@ import AddNewEntry from './components/AddNewEntry';
 import UserEntries from './components/UserEntries';
 import Footer from './components/Footer';
 import PlanetsCard from './components/PlanetsCard';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -27,6 +29,17 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <ToastContainer
+        position="top-center"
+        autoClose={3500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }

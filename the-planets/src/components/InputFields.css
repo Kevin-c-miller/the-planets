@@ -28,3 +28,26 @@ h2 {
   border: 2px solid black !important;
   border-radius: 8px !important;
 }
+
+.entry-name {
+  margin: 5px 20px;
+}
+
+.delete-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  margin: 20px !important;
+  width: 75%;
+  border: 3px solid #000;
+  border-radius: 8px !important;
+  background: rgb(250, 87, 87);
+  color: #000;
+  font-weight: bold;
+}
+
+.delete-button:hover {
+  opacity: 0.7;
+}

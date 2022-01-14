@@ -53,7 +53,7 @@ export default function InputFields(props) {
           />
           <br />
 
-          <button class="btn btn-dark" onClick={props.handleSubmit}>
+          <button className="btn btn-dark" onClick={props.handleSubmit}>
             Submit
           </button>
         </Form>

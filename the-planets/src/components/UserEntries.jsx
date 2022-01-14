@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import api from '../services/apiConfig/userEntry';
 import Accordion from 'react-bootstrap/Accordion';
 import './InputFields.css';
+import DeleteButton from './DeleteButton';
 
 export default function UserEntries() {
   const [userEntries, setUserEntries] = useState([]);
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchUserEntries = async () => {
@@ -12,7 +15,7 @@ export default function UserEntries() {
       setUserEntries(res.data.records);
     };
     fetchUserEntries();
-  }, []);
+  }, [userEntries]);
 
   const renderUserEntry = (userEntry, index) => {
     return (
@@ -42,9 +45,10 @@ export default function UserEntries() {
 
               <br />
               <div>
-                <p>
+                <p className="entry-name">
                   <b>Submitted by:</b> {userEntry.fields?.userEntryName}
                 </p>
+                <DeleteButton id={id} userEntry={userEntry} />
               </div>
             </div>
           </div>
