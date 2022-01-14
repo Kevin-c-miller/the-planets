@@ -15,6 +15,7 @@ export default function PlanetDetails() {
       setPlanet(res.data);
     };
     fetchPlanet();
+    //eslint-disable-next-line
   }, []);
 
   if (!planet.fields) {

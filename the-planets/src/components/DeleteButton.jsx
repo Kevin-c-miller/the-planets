@@ -9,7 +9,7 @@ export default function DeleteButton(props) {
   const navigate = useNavigate();
 
   const handleDelete = async () => {
-    const res = await api.delete(`${props.userEntry.id}`);
+    await api.delete(`${props.userEntry.id}`);
 
     toast.success('Deleting Record');
     navigate('/user-entries');
