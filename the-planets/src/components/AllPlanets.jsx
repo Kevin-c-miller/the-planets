@@ -15,7 +15,7 @@ export default function AllPlanets() {
     fetchPlanets();
   }, []);
 
-  //function for the set up for each planet card - called as argument in map function
+  //function for the set up for each planet card - called as argument in map function below
   const renderCard = (planet, index) => {
     return (
       <div className="card text-center shadow" key={index}>

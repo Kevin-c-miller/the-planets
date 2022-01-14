@@ -17,6 +17,7 @@ export default function UserEntries() {
     fetchUserEntries();
   }, [userEntries]);
 
+  //function for the set up for each user entry - called as argument in map function below
   const renderUserEntry = (userEntry, index) => {
     return (
       <div className="card text-center shadow" key={index}>
@@ -27,29 +28,27 @@ export default function UserEntries() {
             style={{ width: '315px', height: '315px' }}
             className="card-img-top"
           />
-          <div className="card-body text-dark">
-            <h4 className="card-title">{userEntry.fields?.name}</h4>
-            <div className="user-entry-fields">
-              <Accordion>
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>
-                    Type of Astronomical Object
-                  </Accordion.Header>
-                  <Accordion.Body>{userEntry.fields?.type}</Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header>Fun Fact</Accordion.Header>
-                  <Accordion.Body>{userEntry.fields?.fact}</Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
+        </div>
+        <div className="card-body text-dark">
+          <h4 className="card-title">{userEntry.fields?.name}</h4>
+          <div className="user-entry-fields">
+            <Accordion>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>Type of Astronomical Object</Accordion.Header>
+                <Accordion.Body>{userEntry.fields?.type}</Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>Fun Fact</Accordion.Header>
+                <Accordion.Body>{userEntry.fields?.fact}</Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
 
-              <br />
-              <div>
-                <p className="entry-name">
-                  <b>Submitted by:</b> {userEntry.fields?.userEntryName}
-                </p>
-                <DeleteButton id={id} userEntry={userEntry} />
-              </div>
+            <br />
+            <div>
+              <p className="entry-name">
+                <b>Submitted by:</b> {userEntry.fields?.userEntryName}
+              </p>
+              <DeleteButton id={id} userEntry={userEntry} />
             </div>
           </div>
         </div>
