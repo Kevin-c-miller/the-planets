@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import api from '../services/apiConfig/userEntry';
 import Accordion from 'react-bootstrap/Accordion';
+import './InputFields.css';
 
 export default function UserEntries() {
   const [userEntries, setUserEntries] = useState([]);

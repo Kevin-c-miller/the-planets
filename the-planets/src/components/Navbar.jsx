@@ -6,7 +6,7 @@ export default function Navbar() {
     <div className="nav-bar">
       <ReactBootStrap.Navbar
         collapseOnSelect
-        expand="lg"
+        expand="xl"
         bg="dark"
         variant="dark"
         fixed="top"
@@ -22,9 +22,11 @@ export default function Navbar() {
               <ReactBootStrap.Nav.Link href="/planets">
                 View All Planets
               </ReactBootStrap.Nav.Link>
+              <p>|</p>
               <ReactBootStrap.Nav.Link eventKey={2} href="/new">
                 Add New Entry
               </ReactBootStrap.Nav.Link>
+              <p>|</p>
               <ReactBootStrap.Nav.Link href="/user-entries">
                 View User Entries
               </ReactBootStrap.Nav.Link>

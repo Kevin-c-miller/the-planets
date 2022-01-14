@@ -7,6 +7,7 @@ import {
   Saturn,
   Jupiter,
   Uranus,
+  Comet,
 } from '../assets/index.js';
 
 //image carousol being rendered on hompage of app
@@ -42,7 +43,12 @@ export default function HomeImageCarousel() {
           <img className="d-block w-100" src={Sun} alt="The Sun" />
           <Carousel.Caption>
             <h3>The Sun</h3>
-            <p>Taken from NuSTAR (Nuclear Spectroscopic Telescope Array)</p>
+            <p>
+              NASA Extreme Ultraviolet Imaging Telescope aboard ESA’s SOHO
+              spacecraft took this image of a huge, handle-shaped prominence in
+              1999. Prominences are huge clouds of relatively cool dense plasma
+              suspended in the Sun hot, thin corona.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -87,6 +93,17 @@ export default function HomeImageCarousel() {
           <Carousel.Caption>
             <h3>Uranus</h3>
             <p>Taken by Voyager 2 as it sails past Uranus in Jan. 1986</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={Comet} alt="uranus" />
+          <Carousel.Caption>
+            <h3>Comet ISON</h3>
+            <p>
+              Comet ISON shines brightly in this image taken on the morning of
+              19 Nov. 2013. This is a 10-second exposure taken with the Marshall
+              Space Flight Center 20&quot; telescope in New Mexico.{' '}
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

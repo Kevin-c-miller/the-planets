@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 .navbar {
   height: 80px !important;
   color: white;
@@ -5,18 +7,29 @@
 
 .navbar-brand {
   font-size: 32px !important;
+  font-family: 'Space Mono', 'Times New Roman', Times, serif;
 }
 .navbar-nav {
   background: #212529 !important;
   align-items: center !important;
+  font-family: 'Space Mono', 'Times New Roman', Times, serif;
 }
 
 .nav-link {
   display: flex !important;
   color: #fff !important;
-  /* max-width: 200px; */
 }
 
 .nav-link:hover {
   border-bottom: 2px solid white !important;
+}
+
+.navbar-nav p {
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 1199px) {
+  .navbar-nav p {
+    display: none;
+  }
 }
