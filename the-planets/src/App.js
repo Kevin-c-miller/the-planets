@@ -6,6 +6,7 @@ import AddNewEntry from './components/AddNewEntry';
 import UserEntries from './components/UserEntries';
 import Footer from './components/Footer';
 import PlanetsCard from './components/PlanetsCard';
+import PageNotFound from './components/PageNotFound';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,9 +27,11 @@ function App() {
           <Route path="/planets/:id" element={<PlanetDetails />} />
           <Route path="/new" element={<AddNewEntry />} />
           <Route path="/user-entries" element={<UserEntries />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
       <Footer />
+
       <ToastContainer
         position="top-center"
         autoClose={3500}

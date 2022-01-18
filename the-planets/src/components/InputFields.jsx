@@ -39,7 +39,7 @@ export default function InputFields(props) {
           <Form.Control
             id="image"
             value={image}
-            placeholder="Add URL to an image (if applicable)"
+            placeholder="Add URL to an image"
             onChange={props.handleTextInput}
           />
           <br />
