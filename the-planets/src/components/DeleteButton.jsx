@@ -8,6 +8,7 @@ export default function DeleteButton(props) {
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
 
+  // delete request
   const handleDelete = async () => {
     await api.delete(`${props.userEntry.id}`);
 

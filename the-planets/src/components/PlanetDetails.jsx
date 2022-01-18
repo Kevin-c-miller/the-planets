@@ -9,6 +9,7 @@ export default function PlanetDetails() {
   const [planet, setPlanet] = useState({});
   const { id } = useParams();
 
+  // get request for a specific planet
   useEffect(() => {
     const fetchPlanet = async () => {
       const res = await api.get(`/${id}`);
