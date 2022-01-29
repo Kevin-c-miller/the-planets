@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import api from '../services/apiConfig/planet.js';
-import './Box.css';
+import api from '../../services/apiConfig/planet.js';
+import '../Shared/Box.css';
 
 export default function AllPlanets() {
   const [planets, setPlanets] = useState([]);

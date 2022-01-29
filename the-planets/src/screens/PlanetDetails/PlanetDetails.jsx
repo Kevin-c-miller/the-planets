@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {} from 'react-router-dom';
-import api from '../services/apiConfig/planet.js';
+import api from '../../services/apiConfig/planet.js';
 import './PlanetDetails.css';
-import PlanetDetailsCard from './PlanetDetailsCard.jsx';
+import PlanetDetailsCard from '../../components/PlanetDetails/PlanetDetailsCard.jsx';
 
 export default function PlanetDetails() {
   const [planet, setPlanet] = useState({});

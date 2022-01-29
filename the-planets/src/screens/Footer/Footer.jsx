@@ -1,5 +1,5 @@
 import './Footer.css';
-import { Github, Linkedin } from '../assets/index.js';
+import { Github, Linkedin } from '../../assets/index.js';
 
 export default function Footer() {
   return (

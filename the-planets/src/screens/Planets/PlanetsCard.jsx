@@ -1,5 +1,5 @@
-import AllPlanets from './AllPlanets';
-import './Box.css';
+import AllPlanets from '../../components/Planets/AllPlanets';
+import '../../components/Shared/Box.css';
 
 export default function PlanetsCard(props) {
   return (

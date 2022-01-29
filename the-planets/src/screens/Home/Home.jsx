@@ -1,5 +1,5 @@
 import './Home.css';
-import HomeImageCarousel from './HomeImageCarousel';
+import HomeImageCarousel from '../../components/Carousel/HomeImageCarousel';
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import api from '../services/apiConfig/userEntry';
+import api from '../../services/apiConfig/userEntry.js';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Modal, Button } from 'react-bootstrap';

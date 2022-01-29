@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import InputFields from './InputFields';
-import api from '../services/apiConfig/userEntry.js';
+import InputFields from '../../components/InputFields/InputFields';
+import api from '../../services/apiConfig/userEntry.js';
 import { useNavigate } from 'react-router-dom';
 
 const default_input = {

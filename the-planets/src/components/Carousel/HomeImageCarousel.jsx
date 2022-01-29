@@ -8,7 +8,7 @@ import {
   Jupiter,
   Uranus,
   Comet,
-} from '../assets/index.js';
+} from '../../assets/index.js';
 
 //image carousol being rendered on hompage of app
 export default function HomeImageCarousel() {

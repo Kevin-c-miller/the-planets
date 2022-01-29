@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import api from '../services/apiConfig/userEntry';
+import api from '../../services/apiConfig/userEntry.js';
 import Accordion from 'react-bootstrap/Accordion';
-import './InputFields.css';
-import DeleteButton from './DeleteButton';
+import '../../components/InputFields/InputFields.css';
+import DeleteButton from '../../components/Delete/DeleteButton';
 
 export default function UserEntries() {
   const [userEntries, setUserEntries] = useState([]);
