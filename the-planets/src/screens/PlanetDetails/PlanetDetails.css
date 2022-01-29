@@ -8,6 +8,8 @@
 
 .planet-img img {
   border-radius: 50%;
+  width: 400px;
+  height: 350px;
 }
 
 .planet-img img:hover {
@@ -35,4 +37,19 @@
 
 #planet-header {
   font-size: 36px;
+}
+
+@media screen and (max-width: 600px) {
+  .planet-img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+  }
+
+  .card-text {
+    width: 85%;
+    font-size: 12px !important;
+    padding: 5px 15px !important;
+    text-align: center !important;
+  }
 }

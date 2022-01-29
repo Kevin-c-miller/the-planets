@@ -51,3 +51,17 @@ h2 {
 .delete-button:hover {
   opacity: 0.7;
 }
+
+@media screen and(max-width: 600px) {
+  .input-form {
+    max-width: 250px;
+  }
+
+  form form-label {
+    font-size: 14px !important;
+  }
+
+  form .form-control {
+    line-height: 1.1 !important;
+  }
+}

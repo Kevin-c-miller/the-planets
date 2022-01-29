@@ -11,11 +11,7 @@ export default function PlanetDetailsCard(props) {
             <h2 id="planet-header">{planet.fields?.Name}</h2>
           </div>
           <div className="img-fluid planet-img">
-            <img
-              style={{ width: '400px', height: '350px' }}
-              src={planet.fields.image}
-              alt={planet.fields.Name}
-            />
+            <img src={planet.fields.image} alt={planet.fields.Name} />
           </div>
         </div>
       </div>

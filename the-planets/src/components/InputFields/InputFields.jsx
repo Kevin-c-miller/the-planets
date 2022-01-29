@@ -10,6 +10,7 @@ export default function InputFields(props) {
         <Form>
           <Form.Label>Object Name</Form.Label>
           <Form.Control
+            autoFocus
             id="name"
             value={name}
             placeholder="Add Name"
