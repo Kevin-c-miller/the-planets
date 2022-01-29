@@ -23,11 +23,10 @@ export default function UserEntries() {
   const renderUserEntry = (userEntry, index) => {
     return (
       <div className="card text-center shadow" key={index}>
-        <div className="overflow">
+        <div className="overflow user-img">
           <img
             src={userEntry.fields?.image}
             alt={userEntry.fields?.name}
-            style={{ width: '315px', height: '315px' }}
             className="card-img-top"
           />
         </div>

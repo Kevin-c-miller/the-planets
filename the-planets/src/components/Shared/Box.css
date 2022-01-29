@@ -13,12 +13,9 @@
   overflow: hidden;
 }
 
-.card img {
+.card-img-top {
   height: 315px;
   width: 315px;
-}
-
-.card-img-top {
   transform: scale(1);
   transition: transform 0.5s ease;
 }
@@ -73,12 +70,13 @@
 
 @media screen and (max-width: 600px) {
   .card {
-    height: 350px !important;
-    width: 250px !important;
+    height: 100% !important;
+    width: 100% !important;
+    margin: 30px 75px;
   }
 
   .card .card-img-top {
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 100%;
   }
 }
