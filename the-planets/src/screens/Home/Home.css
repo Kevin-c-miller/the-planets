@@ -16,3 +16,26 @@
   max-width: 2400px;
   margin: auto;
 }
+
+@media only screen and (max-width: 600px) {
+  .Home h1 {
+    font-size: 24px;
+    margin: 0 auto 5px;
+    color: white;
+    font-family: 'Space Mono', 'Times New Roman', Times, serif;
+  }
+
+  .Home img {
+    max-height: 50vh;
+  }
+
+  .carousel-item img {
+    padding: 10px;
+    max-width: 575px;
+    margin: auto;
+  }
+
+  .Home p {
+    font-size: 12px;
+  }
+}
