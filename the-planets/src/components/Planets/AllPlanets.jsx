@@ -21,7 +21,6 @@ export default function AllPlanets() {
       <div className="card text-center shadow" key={index}>
         <div className="overflow">
           <img
-            style={{ height: '315px', width: '315px' }}
             src={planet.fields?.image}
             alt={planet.fields?.Name}
             className="card-img-top"

@@ -12,7 +12,7 @@ export default function Navbar() {
         fixed="top"
       >
         <ReactBootStrap.Container>
-          <ReactBootStrap.Navbar.Brand href="/">
+          <ReactBootStrap.Navbar.Brand href="/" className="Nav-header">
             The Planets
           </ReactBootStrap.Navbar.Brand>
           <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
