@@ -7,14 +7,11 @@
   font-family: 'Space Mono', 'Times New Roman', Times, serif;
 }
 
-.Home img {
-  max-height: 72vh;
-}
-
 .carousel-item img {
   padding: 10px;
   max-width: 2400px;
   margin: auto;
+  max-height: 65vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -35,7 +32,11 @@
     margin: auto;
   }
 
-  .Home p {
-    font-size: 12px;
+  .carousel-caption h3 {
+    font-size: calc(1rem + 0.6vw);
+  }
+
+  .carousel-caption p {
+    font-size: 9.5px !important;
   }
 }

@@ -35,7 +35,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .nav-header {
-    font-size: 20px;
+  .Nav-header {
+    font-size: 20px !important;
   }
 }
