@@ -38,7 +38,7 @@ export default function AllPlanets() {
 
   return (
     <>
-      <h2 style={{ color: 'white' }}>Planets of Our Solar System</h2>/
+      <h2 style={{ color: 'white' }}>Planets of Our Solar System</h2>
       <div className="grid">{planets.map(renderCard)}</div>
     </>
   );
