@@ -1,8 +1,5 @@
-# Project Overview
-
-## Project Name
-
-<h3>The Planets</h3>
+# The Planets
+Student project for General Assembly
 
 ## Project Description
 
