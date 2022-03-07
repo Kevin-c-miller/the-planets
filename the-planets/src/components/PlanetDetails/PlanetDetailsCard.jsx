@@ -18,7 +18,7 @@ export default function PlanetDetailsCard(props) {
       <div className="planet-info-container">
         <div className="row text-center">
           <div className="col-md">
-            <div className="card card-planet bg-dark text-light">
+            <div className=" card-planet text-light">
               <div className="h1 mb-3">
                 <i class="bi bi-globe"></i>
               </div>
